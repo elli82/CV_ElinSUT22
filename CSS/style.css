@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    margin:10px;
+}
+body{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/912/256/892/landscape-forest-deer-artwork-wallpaper-preview.jpg");
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    margin: 0;
+    padding:0;    
+    background-color: rgb(218, 213, 219);
+    }
+.navbar a{
+    display: flex;
+    color: #000;
+    text-decoration: 0;
+    text-align: none;
+    display: block; 
+    }
+.navbar a:hover:not(.active){
+    background: rgb(136, 142, 177);
+    }
+.active{
+    background-color: rgb(136, 142, 177) ;
+}
+header{
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+}
+.home{
+    width: 900px;
+    float: left;
+}
+.aboutme{
+    display:flex;    
+    float:right;
+    width: 1000px;
+    background-color:  rgb(218, 213, 219);
+    margin: 10;
+    padding: 10px;
+    opacity: 0.7;
+}
+.personalimage{
+    margin:0;
+    padding:0;
+    float:left;
+}
+.edu{
+    background-color:  rgb(218, 213, 219);
+    width:fit-content;
+    opacity: 0.7;
+}
+.employ{
+    background-color:  rgb(218, 213, 219);
+    width: fit-content;
+    opacity: 0.7;
+}
+.projects{
+    background-color:rgb(218, 213, 219); 
+    opacity: 0.7;
+    padding:0;
+    margin:0;
+    width: fit-content;
+}
+.button {
+    font-size: 0.75em;
+    padding: 4px;
+    background-color: white;
+    border:1px solid lightgrey;
+    border-radius:6px;
+    color: rgb(81, 50, 110);
+    display:inline-block;
+    border-radius:6px;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    -ms-border-radius:6px;
+    -o-border-radius:6px;
+}
+.button:hover {
+    background: rgb(136, 142, 177);
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;    
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}  
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;    
+}  
+.popup .close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    background: rgb(136, 142, 177);
+}
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+@media screen and (max-width: 800px) {
+    .popup {
+        width: 100%;
+        }
+        .popup .content {
+            width: 100%;
+            }
+            .navbar ul{
+                display: flex;
+                flex-direction:column;                          
+            }
+            .navbar a{
+                display: inline;
+            }
+}
+@media screen and(max-width:700px) {
+    .popup {
+    width: 100%;
+    }
+    .popup .content {
+        width: 100%;
+        } 
+        .navbar ul {
+            display:flex;
+            flex-direction:column;            
+        }
+        .navbar a{
+            display: inline;
+        }
+}
+footer{
+    display:flex;
+    justify-content: flex-end;  
+    clear: both;
+}
