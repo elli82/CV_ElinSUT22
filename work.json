@@ -1,0 +1,24 @@
+{
+    "employments":[
+        {
+            "company":"Apoteksgruppen",
+            "city":"Veddige",
+            "time":"2017-2022"
+        },
+        {
+            "company":"Apoteksgruppen/Apoteket Gladan",
+            "city":"Varberg",
+            "time":"2005-2017"
+        },
+        {
+            "company":"Apoteket Kronan",
+            "city":"Varberg",
+            "time":"2005"
+        },
+        {
+            "company":"Apoteket Kronan",
+            "city":"Skene",
+            "time":"2004-2005"
+        }
+    ]
+}
