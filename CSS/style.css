@@ -39,13 +39,15 @@ h1{
     font-size: 3em;
 }
 .home{
+    font-style: italic;
+    font-size: 18px;
     width: 900px;
     float: left;
 }
 .aboutme{
     display:flex;    
     float:right;
-    width: 1000px;
+    width: 900px;
     background-color:  rgb(218, 213, 219);
     margin: 10;
     padding: 10px;
@@ -166,3 +168,32 @@ footer{
     justify-content: flex-end;  
     clear: both;
 }
+
+#egg{
+    width: 300px;
+    height:100px;
+    display: flex;
+    float: right;
+}
+
+.surprisemodal {
+    background:  rgb(218, 213, 219);
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.surprise {  
+    font-size: 38px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    }
+    .surprisemodal:hover{
+        background-color: yellow;
+        cursor: pointer;
+    }
+    
